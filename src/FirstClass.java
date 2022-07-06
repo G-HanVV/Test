@@ -15,7 +15,7 @@ public class FirstClass {
             String operator = "";
             System.out.print("Выражение: ");
             str = in.nextLine();
-            Pattern patternMainInt = Pattern.compile("[0-9]{1,2}[+/*-][0-9]{1,2}");
+            Pattern patternMainInt = Pattern.compile("[0-9]{1,2}[+/*-][0-9]{1,3}");
             Matcher matcherMainInt = patternMainInt.matcher(str);
             Pattern patternMainRome = Pattern.compile("[IVXLDCM]{1,4}[+/*-][IVXLDCM]{1,4}");
             Matcher matcherMainRome = patternMainRome.matcher(str);
