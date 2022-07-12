@@ -48,7 +48,7 @@ public class FirstClass {
                             break;
                     }
                 } else {
-                    System.out.println("throws Exception //т.к. ну мы же договаривались от 1 до  10");
+                    System.out.println("throws Exception //т.к. ну мы же договаривались от 1 до 10");
                     t = 0;
                 }
             } else if (str == mainCheckRome) {
