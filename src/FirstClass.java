@@ -15,7 +15,7 @@ public class FirstClass {
             String operator = "";
             System.out.print("Выражение: ");
             str = in.nextLine();
-            Pattern patternMainInt = Pattern.compile("[0-9]{1,2}[+/*-][0-9]{1,3}");
+            Pattern patternMainInt = Pattern.compile("[0-9]{1,2}[+/*-][0-9]{1,2}");
             Matcher matcherMainInt = patternMainInt.matcher(str);
             Pattern patternMainRome = Pattern.compile("[IVXLDCM]{1,4}[+/*-][IVXLDCM]{1,4}");
             Matcher matcherMainRome = patternMainRome.matcher(str);
@@ -48,12 +48,8 @@ public class FirstClass {
                             break;
                     }
                 } else {
-                    try {
-                        int p = Integer.parseInt("i");
-                    } catch (Exception exception) {
-                        System.out.println("throws Exception //т.к. ну мы же договаривались от 1 до 10");
-                        t = 0;
-                    }
+                    System.out.println("throws Exception //т.к. ну мы же договаривались от 1 до 10");
+                    t = 0;
                 }
             } else if (str == mainCheckRome) {
                 int[] nums = getIntFromRome(str);
